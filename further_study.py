@@ -181,7 +181,7 @@ def custom_count(input_list, value):
 
     return count
 
-    
+
 def custom_reverse(input_list):
     """Reverse the elements of the input_list.
 
@@ -197,8 +197,7 @@ def custom_reverse(input_list):
         True
 
     """
-
-    pass
+    input_list[:] = input_list[::-1]
 
 
 def custom_contains(input_list, value):
