@@ -239,8 +239,13 @@ def custom_equality(some_list, another_list):
         False
 
     """
+    if custom_len(some_list) == custom_len(another_list): 
+        for i, item in enumerate(some_list): 
+            if not item == another_list[i]: 
+                return False
+        return True
 
-    return None
+    return False
 
 
 ##############################################################################
